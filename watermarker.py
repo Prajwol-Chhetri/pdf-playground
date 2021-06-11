@@ -4,7 +4,7 @@ import PyPDF2
 template_file = sys.argv[1] # name of the pdf file to watermark
 
 template = PyPDF2.PdfFileReader(open(template_file, 'rb'))
-watermark = PyPDF2.PdfFileReader(open('wtr.pdf', 'rb'))
+watermark = PyPDF2.PdfFileReader(open('#your watermark', 'rb'))
 output = PyPDF2.PdfFileWriter()
 
 for i in range(template.getNumPages()):
